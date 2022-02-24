@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body header {
+  width:  100%;
+  margin: 0;
+}
+
+header {
+  width: 980 px 100%;
+  font-family: Roboto, monospace;
+  margin:  0 auto;
+  background-color: limegreen;
+  padding:  20px;
+}
+
+header h1{
+  font-family:  monospace;
+  color:  white;
+  font-size:  50px;
+}
+
+.myGallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.myGallery img {
+  width: 100%;
+}
+
+.myGallery .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.myGallery .item img {
+  vertical-align: middle;
+}
+
+.myGallery .caption {
+  font-family: monospace;
+  font-size: 20px;
+  color: limegreen;
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  transition: transform .5s;
+  transform: translateY(100%);
+  background: rgba(0, 0, 0, .7);
+}
+
+.myGallery .item:hover .caption {
+  transform: translateY(0%);
+}
