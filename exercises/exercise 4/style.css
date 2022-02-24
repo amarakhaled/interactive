@@ -26,6 +26,7 @@ header h1{
 }
 
 .myGallery {
+  margin-top: 10px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
