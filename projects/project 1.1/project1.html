@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html> 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project 1</title>
-    <link rel = "stylesheet" href = "style.css">
-  </head>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Project 1: My Car
+    </title>
+    <link rel="stylesheet" href="project1.css">
+
+    <!-- This calls out the jQuery Library -->
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+    <!-- This links the jQuery file in your folder -->
+
+    <script src="/jquery.rwdImageMaps.min.js"></script>
+
+    <!-- This initiates the function -->
+
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+
+</head>
+ 
 <body>
 
-<section class="image-1">
-
-<div class="container">
-<a href="page1.html"><img src="red dot.png" alt="red dot" class="dot"/></a><br>
+<div class="instructions">
+            click on the yellow dot to move forward
 </div>
 
-</section>
+<div class="main-container">
+    <a href="Stop1.html"><img src="yellowdot.png" alt="yellow dot" class="dot"/></a><br>
+        <div class="road"></div>
+        <div class="road-sideview"></div>
+        <div class="moving-car">
+            <img src="car.png" alt="moving-car">
+        </div>
+</div>
+
+
 
 </body>
+ 
 </html>

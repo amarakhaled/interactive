@@ -19,14 +19,5 @@ section{
     background-attachment: fixed;
 }
 .image-1 {
-  background-image: url("insidecar.png")
-}
-.container {
-  position: absolute;
-  top: 460px;
-  left: 410px;
-}
-
-.dot{
-  max-width: 80px;
+  background-image: url("Background1.png")
 }

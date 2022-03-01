@@ -17,7 +17,14 @@ body{
     overflow-x: hidden;
 } 
 
-
+.instructions {
+    color: #000;
+    background-color: yellow;
+    font-size: 11px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
 
 .dot{
   max-width: 80px;
@@ -85,4 +92,17 @@ body{
     }
 }
 
+.image-1 {
+  background-image: url("Background1.png")
+}
+
+.button{
+  border: none;
+  padding: 14px 45px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
 
