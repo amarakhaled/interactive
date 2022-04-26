@@ -3,26 +3,53 @@ body {
 }
 
 table {
+  margin: auto;
   width: 75vw;
   background-color: #eece57;
-  margin: auto;
   border-radius: 40px;
   height: 30px;
   margin-top: 40px;
   border-collapse: collapse;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 th {
   border-right: solid #fefcec 6pt;
 }
 
+#buttons {
+  position: relative;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
+}
+
 .word {
-  font-size: 60pt;
+  font-size: 20vw;
+  font-size: calc(50px + 1vh);
+  font-family: sans-serif;
+  color: #563412;
+  text-align: left;
+  margin-bottom: 60%;
+}
+.word2{ 
+
+  font-family: sans-serif;
+  color: #563412;
+  text-align: left;
+  margin-bottom: 60%;
+}
+
+.word3{
+  font-size: 8vw;
   font-family: sans-serif;
   color: #563412;
   text-align: left;
 }
-
 .dif {
   margin: auto;
   height: 50vh;
@@ -31,12 +58,15 @@ th {
 
 .button1 {
   background-color: #eece57;
-  text-decoration: none;
 }
 
 .button2 {
   background-color: #62b253;
-  text-decoration:  none;
+}
+a{
+  text-decoration: none;
+  color: #fefcec;
+
 }
 
 button {
@@ -46,12 +76,8 @@ button {
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 40px;
-  margin-right: 100px;
-  margin-left: auto;
-  margin-bottom: 20px;
   font-size: 30px;
   color: #fefcec;
-  text-decoration: none;
 }
 
 label {
@@ -64,21 +90,26 @@ input.text {
   padding-top: 20px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
- 
 .green {
   background-color: green;
 }
-.green2 {
-      border-radius: 40px 0px 0px 40px;
-      background-color: green;
+
+
+@media only screen and (max-width: 768px)  {
+  .word {
+font-size:40px;  }
+  table {
+    border-radius: 100px;
+  }
+ 
+  button{
+    height:50px;
+    width:100px;
+    font-size: 25px;
+  }
+  th {
+  border-right: solid #fefcec 3pt;
 }
 
-.green3 {
-   border-radius: 0px 40px 40px 0px;
-      background-color: green;
+
 }
