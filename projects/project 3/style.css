@@ -21,6 +21,43 @@ th {
   border-right: solid #fefcec 6pt;
 }
 
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 80%;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 #buttons {
   position: relative;
   left: 50%;
@@ -34,7 +71,7 @@ th {
   font-family: sans-serif;
   color: #563412;
   text-align: left;
-  margin-bottom: 60%;
+  margin-bottom: 30%;
 }
 .word2{ 
 
@@ -50,6 +87,15 @@ th {
   color: #563412;
   text-align: left;
 }
+
+.word4{
+  font-size:  8vw;
+  font-family:  sans-serif;
+  margin-top: 20%;
+  margin-bottom:  20%;
+  color: #563412;
+}
+
 .dif {
   margin: auto;
   height: 50vh;
